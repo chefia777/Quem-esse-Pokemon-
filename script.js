@@ -4,7 +4,7 @@ let urlForm = "https://pokeapi.co/api/v2/pokemon/";
 let botao = document.getElementById("botaozinho");
 
 
-let idPokemon = Math.floor(Math.random()*100);
+let idPokemon = Math.floor(Math.random()*151);
 
 // Valor do inpt Name
 let nome = document.getElementById("name");
@@ -31,7 +31,6 @@ let nomePokemon = ''
 fetch(urlForm)
         .then(resposta => resposta.json())
         .then(function (data) {
-            console.log(data.sprites.front_default)
             html = 'Nome: ' + data.name
             resposta.innerHTML = html
             imagemInicial.innerHTML = "<img src='" + data.sprites.front_default + "'>"

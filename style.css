@@ -95,6 +95,7 @@ hr {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
     text-align: center;
     min-height: 50%;
+    transition: 2s;
 }
 
 .conteudo {
