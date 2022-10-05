@@ -122,3 +122,7 @@ hr {
     color: #333;
 }
 
+.esconder {
+    display: none;
+}
+
